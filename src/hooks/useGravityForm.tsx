@@ -106,7 +106,6 @@ const GravityFormContext = createContext<{
 
 export function GravityFormProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(reducer, DEFAULT_STATE);
-  console.table(state);
 
   return (
     <GravityFormContext.Provider value={{ state, dispatch }}>
